@@ -1,0 +1,10 @@
+#!/bin/bash
+#https://www.tutorialspoint.com/unix/shell_scripting.htm
+if [ $# == 1 ]
+then
+git config --global user.email janithawijesinghe1992@gmail.com
+git add .
+#git commit -m "171aeb027"
+git commit -m $1
+git push origin master
+fi
